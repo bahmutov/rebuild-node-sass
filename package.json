@@ -1,0 +1,19 @@
+{
+  "name": "rebuild-node-sass",
+  "version": "1.0.0",
+  "description": "Rebuilds node-sass but only if needed",
+  "main": "index.js",
+  "bin": {
+    "rebuild-node-sass": "./rebuild.sh"
+  },
+  "scripts": {
+    "test": "./rebuild.sh"
+  },
+  "files": ["rebuild.sh"],
+  "keywords": ["sass", "node-sass", "util"],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
