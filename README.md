@@ -2,8 +2,28 @@
 
 > Rebuilds node-sass but only if needed
 
+[![NPM][npm-icon] ][npm-url]
+
 [![Build status][ci-image] ][ci-url]
 [![semantic-release][semantic-image] ][semantic-url]
+
+## Use
+
+```sh
+npm install --save-dev rebuild-node-sass node-sass
+```
+
+Then before build (when `node-sass` is probably used), call `rebuild-node-sass`
+to make sure it is ready
+
+```json
+{
+  "scripts": {
+    "prebuild": "rebuild-node-sass",
+    "build": "..."
+  }
+}
+```
 
 ## Testing
 
@@ -31,6 +51,8 @@ Binary is fine
 node-sass@4.5.3 /src/node_modules/node-sass
 ```
 
+[npm-icon]: https://nodei.co/npm/rebuild-node-sass.svg?downloads=true
+[npm-url]: https://npmjs.org/package/rebuild-node-sass
 [ci-image]: https://travis-ci.org/bahmutov/rebuild-node-sass.svg?branch=master
 [ci-url]: https://travis-ci.org/bahmutov/rebuild-node-sass
 [semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
