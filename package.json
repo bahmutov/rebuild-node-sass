@@ -1,19 +1,31 @@
 {
   "name": "rebuild-node-sass",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Rebuilds node-sass but only if needed",
   "main": "index.js",
   "bin": {
     "rebuild-node-sass": "./rebuild.sh"
   },
   "scripts": {
-    "test": "./rebuild.sh"
+    "test": "./rebuild.sh",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "files": ["rebuild.sh"],
-  "keywords": ["sass", "node-sass", "util"],
+  "files": [
+    "rebuild.sh"
+  ],
+  "keywords": [
+    "sass",
+    "node-sass",
+    "util"
+  ],
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "semantic-release": "^6.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/rebuild-node-sass.git"
   }
 }

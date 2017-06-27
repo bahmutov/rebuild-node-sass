@@ -2,6 +2,9 @@
 
 > Rebuilds node-sass but only if needed
 
+[![Build status][ci-image] ][ci-url]
+[![semantic-release][semantic-image] ][semantic-url]
+
 ## Testing
 
 To execute in a different environment, for example when working on Mac, we
@@ -27,3 +30,8 @@ Testing binary
 Binary is fine
 node-sass@4.5.3 /src/node_modules/node-sass
 ```
+
+[ci-image]: https://travis-ci.org/bahmutov/rebuild-node-sass.svg?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/rebuild-node-sass
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
