@@ -4,14 +4,14 @@
   "description": "Rebuilds node-sass but only if needed",
   "main": "index.js",
   "bin": {
-    "rebuild-node-sass": "./rebuild.sh"
+    "rebuild-node-sass": "index.js"
   },
   "scripts": {
     "test": "./rebuild.sh",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
-    "rebuild.sh"
+    "index.js"
   ],
   "keywords": [
     "sass",
@@ -27,5 +27,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/bahmutov/rebuild-node-sass.git"
+  },
+  "dependencies": {
+    "execa": "^0.8.0"
   }
 }
